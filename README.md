@@ -1,7 +1,7 @@
 # USSF_SDI_Class_Content
-Coding challenges, notes, and mini-projects done throughout United States Space Force (USSF) Software Development Immersive (SDI) Cohort #2. Major projects or highlights are in separate Github repositories
+Coding challenges, notes, and mini-projects done throughout United States Space Force (USSF) Software Development Immersive (SDI) Cohort #2. Major projects or highlights, as decided by Justin Law, are located in ![separate Github repositories](https://github.com/justinthelaw?tab=repositories).
 
-## Completed USSF SDI Learn Modules
+## Major USSF SDI Learn Modules
   - Git and the Command Line
   - Technical Knowledge
   - Toy Problems
@@ -11,7 +11,7 @@ Coding challenges, notes, and mini-projects done throughout United States Space 
   - Object Oritented Programming (OOP)
   - Test Driven Development (TDD)
   - Hypertext Markup Language (HTML)
-  - React Hooks, Routing, TDD, Stying
+  - React Applications
   - Major Project #1
   - Node Hypertext Transfer Protocol (HTTP) Servers
   - Express Servers
