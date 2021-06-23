@@ -1,0 +1,42 @@
+/* CSS */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto; /* implicit */
+  max-height: 200px;
+  background-color: #C5DDAF;
+  border-radius: 10px;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  height: auto; /* implicit */
+  max-height: 200px;
+  background-color: #656ff8;
+  border-radius: 10px;
+}
+
+.green-square {
+  background-color: green;
+  height: 36px;
+  width: 50px;
+  /* margin: T R B L */
+  margin: 10px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 14px
+}
+
+/*
+.test {
+  color: #FF0000;
+  color: #00FF00;
+  color: #0000FF;
+  color: #000;
+  color: #FFF
+} */

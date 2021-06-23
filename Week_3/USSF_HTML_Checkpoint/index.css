@@ -1,0 +1,143 @@
+body{
+  margin: 0 0;
+}
+header {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 8fr 8fr 8fr 4fr;
+  background-color: rgb(71, 71, 71);
+  color: #c8c8c8;
+  font-weight: 500;
+  align-items: center;
+}
+
+header p{
+  padding-left: 20px;
+  font-size: 30px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  grid-column: 2/3;
+  display: inline;
+  margin: 0 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.search {
+  grid-column: 5/5;
+  padding-bottom: 15px;
+}
+
+.search input {
+  border-radius: 10%;
+}
+.search button {
+  background-color:rgb(71, 71, 71);
+  color: rgb(204, 204, 4);
+  border: solid rgb(204, 204, 4) 2px;
+  border-radius: 10%;
+}
+
+.search button:hover {
+  background-color: rgb(167, 166, 166);
+}
+
+.login {
+display: grid;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+margin: 75px;
+}
+
+.loginTitle {
+  text-align: center;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  align-items: center;
+}
+.email {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  margin-bottom: 30px;
+}
+.email label {
+  margin-bottom: 10px;
+}
+.email input {
+  width: 100%;
+}
+.password {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  margin-bottom: 40px;
+}
+.password label {
+  margin-bottom: 10px;
+}
+.password input {
+  width: 100%;
+}
+.submit {
+  grid-row: 4;
+  grid-column: 2 / 3;
+}
+
+/*Home Page*/
+
+.flex-container {
+  display: flex;
+  align-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+img {
+  max-width: 80%;
+  border-radius: 7.5px;
+}
+
+.column1 {
+  grid-column: 1 / 2;
+  justify-content: space-around;
+  margin: 10px 0 ;
+}
+
+.column2 {
+  grid-column: 2 / 3;
+  justify-content: space-around;
+  margin: 10px 0 ;
+}
+
+.column3 {
+  grid-column: 3 / 4;
+  justify-content: space-around;
+  margin: 10px 0 ;
+}
+
+.column4 {
+  grid-column: 4 / 4;
+  justify-content: space-around;
+  margin: 10px 0 ;
+}
+
+
+.row1 {
+  grid-row: 1 / 2;
+}
+.row2 {
+  grid-row: 2 / 2;
+}

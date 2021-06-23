@@ -1,0 +1,37 @@
+/*COLORS:
+Header background - #FFDBAA
+button - #805215
+Header Text - #553100
+Main background - #D4A76A*/
+
+#company {
+  color: #553100;
+  font-family: Arial;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  position: relative;
+  left: 1.5em;
+  top: -3em
+}
+
+.headerButtons {
+  background: #805215;
+
+  color: white;
+  font-family: Arial;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+
+  margin: 0.5em;
+
+  height: 1.5em;
+  width: 20%;
+  display: block;
+
+  position: relative;
+  left: 1.5em;
+  top: -3em
+}

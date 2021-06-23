@@ -1,0 +1,16 @@
+{
+  "name": "nodejs_server_intro",
+  "version": "1.0.0",
+  "description": "node.js server",
+  "main": "server.js",
+  "dependencies": {
+    "http": "0.0.1-security",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

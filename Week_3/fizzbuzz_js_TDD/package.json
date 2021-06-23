@@ -1,0 +1,16 @@
+{
+    "name": "fizzbuzz-jest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "fizzBuzz.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "jest": "^24.3.1",
+        "jest-cli": "^26.4.2"
+    }
+}
