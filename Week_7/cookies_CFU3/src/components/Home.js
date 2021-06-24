@@ -13,7 +13,10 @@ export default class Home extends React.Component {
   componentDidMount() {
     const getName = () => {
       fetch(`http://localhost:5001/cookies/name`, { credentials: 'include' })
-        .then(this.setState({ name: cookies.get('name') }))
+        .then(response => { if (response) return response })
+        .then(response => cookies.get('name'))
+        .then(cookieName => this.setState({ name: cookieName }))
+        .then(console.log(document.cookie))
     }
     getName();
   }

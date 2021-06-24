@@ -18,7 +18,7 @@ export default function Login() {
     setName(e.target.value)
   }
 
-  function handleClick(e) {
+  function handleBrowser(e) {
     e.preventDefault();
     fetch(`http://localhost:5001/login`, {
       credentials: 'include', method: 'POST', headers: {
@@ -31,6 +31,16 @@ export default function Login() {
       .then(cookies.set('name', name))
   }
 
+  async function handleExpress(e) {
+    e.preventDefault();
+    await fetch(`http://localhost:5001/login?name=${name}`, {
+      credentials: 'include', method: 'GET', headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
+  }
+
   function handleClear(e) {
     e.preventDefault();
     cookies.remove('name')
@@ -40,8 +50,6 @@ export default function Login() {
         'Accept': 'application/json'
       }
     })
-      .then(response => response.json())
-      .then(data => console.log(data))
   }
 
 
@@ -49,7 +57,8 @@ export default function Login() {
     <form type="submit">
       <label htmlFor="name" />
       <input type="text" name="name" placeholder="Name" onChange={e => handleChange(e)} /> <br />
-      <Button type="submit" onClick={e => handleClick(e)}>Login</Button>
+      <Button type="submit" onClick={e => handleBrowser(e)}>Login (Set Cookies In Browser)</Button>
+      <Button type="submit" onClick={e => handleExpress(e)}>Login (Set Cookies In Express)</Button>
       <Button type="submit" onClick={e => handleClear(e)}>Clear Cookies</Button>
     </form>
   )
