@@ -7,23 +7,27 @@ app.use(cors({ origin: 'http://localhost:3000', credentials: true }))
 app.use(express.json());
 app.use(cookie());
 
+let cookieJar = [];
+
 app.get('/', (req, res) => {
-  res.status(200).send('Hello World')
+  res.status(200).send(cookieJar)
 })
 
 app.post('/login', (req, res) => {
-  console.log(req.cookies)
-  res.status(200).end()
+  cookieJar.push(req.cookies)
+  console.log(cookieJar)
+  res.status(200).send(cookieJar).end()
 })
 
 app.get('/cookies/name', (req, res) => {
-  console.log(req.cookies)
-  res.status(200).end()
+  console.log(cookieJar)
+  res.status(200).send(cookieJar).end()
 })
 
 app.get('/cookies/clear', (req, res) => {
-  console.log(req.cookies)
-  res.status(200).end()
+  cookieJar = []
+  console.log(cookieJar)
+  res.status(200).send(cookieJar).end()
 })
 
 const port = 5001

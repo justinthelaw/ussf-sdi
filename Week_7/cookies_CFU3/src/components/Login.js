@@ -21,20 +21,27 @@ export default function Login() {
   function handleClick(e) {
     e.preventDefault();
     fetch(`http://localhost:5001/login`, {
-      credentials: 'include', method: 'POST'
+      credentials: 'include', method: 'POST', headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
     })
+      .then(response => response.json())
+      .then(data => console.log(data))
       .then(cookies.set('name', name))
-      .then(response => console.log(response.status))
-      .then(console.log(document.cookie))
   }
 
   function handleClear(e) {
     e.preventDefault();
     cookies.remove('name')
     fetch(`http://localhost:5001/cookies/clear`, {
-      credentials: 'include', method: 'GET'
+      credentials: 'include', method: 'GET', headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
     })
-      .then(response => console.log(response.status))
+      .then(response => response.json())
+      .then(data => console.log(data))
   }
 
 
