@@ -12,10 +12,16 @@ app.get('/', (req, res) => {
 })
 
 app.post('/login', (req, res) => {
+  console.log(req.cookies)
   res.status(200).end()
 })
 
 app.get('/cookies/name', (req, res) => {
+  console.log(req.cookies)
+  res.status(200).end()
+})
+
+app.get('/cookies/clear', (req, res) => {
   console.log(req.cookies)
   res.status(200).end()
 })

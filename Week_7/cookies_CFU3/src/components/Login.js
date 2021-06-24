@@ -28,12 +28,22 @@ export default function Login() {
       .then(console.log(document.cookie))
   }
 
+  function handleClear(e) {
+    e.preventDefault();
+    cookies.remove('name')
+    fetch(`http://localhost:5001/cookies/clear`, {
+      credentials: 'include', method: 'GET'
+    })
+      .then(response => console.log(response.status))
+  }
+
 
   return (
     <form type="submit">
       <label htmlFor="name" />
       <input type="text" name="name" placeholder="Name" onChange={e => handleChange(e)} /> <br />
       <Button type="submit" onClick={e => handleClick(e)}>Login</Button>
+      <Button type="submit" onClick={e => handleClear(e)}>Clear Cookies</Button>
     </form>
   )
 }
