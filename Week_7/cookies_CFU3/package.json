@@ -1,5 +1,5 @@
 {
-  "name": "involved_styling_intro",
+  "name": "cookies-cfu3",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "nodemon ./server/server.js & react-scripts start",
+    "start": "react-scripts start & nodemon ./server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

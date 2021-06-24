@@ -21,24 +21,18 @@ export default function Login() {
   function handleBrowser(e) {
     e.preventDefault();
     fetch(`http://localhost:5001/login`, {
-      credentials: 'include', method: 'POST', headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
+      credentials: 'include', method: 'POST'
     })
-      .then(response => response.json())
-      .then(data => console.log(data))
+      .then(response => console.log(response))
       .then(cookies.set('name', name))
   }
 
   async function handleExpress(e) {
     e.preventDefault();
     await fetch(`http://localhost:5001/login?name=${name}`, {
-      credentials: 'include', method: 'GET', headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
+      credentials: 'include', method: 'GET'
     })
+      .then(response => console.log(response))
   }
 
   function handleClear(e) {

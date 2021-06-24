@@ -16,7 +16,6 @@ export default class Home extends React.Component {
         .then(response => { if (response) return response })
         .then(response => cookies.get('name'))
         .then(cookieName => this.setState({ name: cookieName }))
-        .then(console.log(document.cookie))
     }
     getName();
   }

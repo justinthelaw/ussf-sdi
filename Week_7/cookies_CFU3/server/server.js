@@ -16,25 +16,20 @@ app.get('/', (req, res) => {
 app.post('/login', (req, res) => {
   cookieJar.push(req.cookies)
   console.log(cookieJar)
-  res.status(200).send(cookieJar).end()
+  res.status(200).send('Cookies set in Browser').end()
 })
 
 app.get('/login', (req, res) => {
-  console.log(req.query.name)
-  res.cookie('name', req.query.name).end()
+  res.cookie('name', req.query.name).send('Cookies set in Express').end()
 })
 
 app.get('/cookies/name', (req, res) => {
-  if (req.cookie) {
-    res.status(200).send(req.cookie.name).end()
-  }
   res.status(200).send(cookieJar).end()
 }
 )
 
 app.get('/cookies/clear', (req, res) => {
   cookieJar = []
-  console.log(cookieJar)
   res.status(200).clearCookie('name').end()
 })
 
