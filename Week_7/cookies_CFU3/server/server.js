@@ -16,21 +16,25 @@ app.get('/', (req, res) => {
 app.post('/login', (req, res) => {
   cookieJar.push(req.cookies)
   console.log(cookieJar)
-  res.status(200).send('Cookies set in Browser').end()
+  res.status(200).end(JSON.stringify('Cookies set in Browser'))
 })
 
 app.get('/login', (req, res) => {
-  res.cookie('name', req.query.name).send('Cookies set in Express').end()
+  cookieJar.push({ 'name': req.query.name })
+  console.log(cookieJar)
+  res.cookie('name', req.query.name).end(JSON.stringify('Cookies set in Express'))
 })
 
 app.get('/cookies/name', (req, res) => {
+  console.log(cookieJar)
   res.status(200).send(cookieJar).end()
 }
 )
 
 app.get('/cookies/clear', (req, res) => {
   cookieJar = []
-  res.status(200).clearCookie('name').end()
+  console.log(cookieJar)
+  res.status(200).clearCookie('name').end(JSON.stringify('Cookies cleared'))
 })
 
 const port = 5001

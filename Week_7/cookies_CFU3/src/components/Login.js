@@ -23,7 +23,8 @@ export default function Login() {
     fetch(`http://localhost:5001/login`, {
       credentials: 'include', method: 'POST'
     })
-      .then(response => console.log(response))
+      .then(response => response.json())
+      .then(data => console.log(data))
       .then(cookies.set('name', name))
   }
 
@@ -32,7 +33,8 @@ export default function Login() {
     await fetch(`http://localhost:5001/login?name=${name}`, {
       credentials: 'include', method: 'GET'
     })
-      .then(response => console.log(response))
+      .then(response => response.json())
+      .then(data => console.log(data))
   }
 
   function handleClear(e) {
@@ -44,6 +46,8 @@ export default function Login() {
         'Accept': 'application/json'
       }
     })
+      .then(response => response.json())
+      .then(data => console.log(data))
   }
 
 

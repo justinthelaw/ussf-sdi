@@ -1,6 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Route } from 'react-router-dom';
 import cookies from 'js-cookie'
+import { Link } from 'react-router-dom'
 
 export default class Home extends React.Component {
   constructor() {
@@ -21,12 +21,17 @@ export default class Home extends React.Component {
   }
 
   render() {
-    return (
-      <Route path='/home'>
+    if (!this.state.name) {
+      return (
         <h3>
-          Welcome home, {this.state.name}!
+          Please enter a name on the <Link exact to="/login">Login</Link> page!
         </h3>
-      </Route>
+      )
+    }
+    return (
+      <h3>
+        Welcome home, {this.state.name}!
+      </h3>
     )
   }
 }

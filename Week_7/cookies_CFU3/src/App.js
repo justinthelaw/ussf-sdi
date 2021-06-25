@@ -10,15 +10,15 @@ function App() {
     <Router className="App">
       <nav>
         <ul>
-          <li><Link to='/home'>Home</Link></li>
-          <li><Link to='/login'>Login</Link></li>
+          <li><Link exact to='/'>Home</Link></li>
+          <li><Link exact to='/login'>Login</Link></li>
         </ul>
       </nav>
       <header className="App-header">
 
         <Switch>
-          <Route path='/home' component={Home} />
-          <Route path='/login' component={Login} />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/login' component={Login} />
         </Switch>
       </header>
     </Router>
