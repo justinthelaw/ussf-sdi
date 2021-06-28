@@ -1,0 +1,25 @@
+version: '2.1'
+
+services:
+  db:
+    image: "postgres"
+    healthcheck:
+      test: exit 0
+    ports:
+     - 5432:5432
+    environment:
+      - POSTGRES_DB=dbname
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+
+  testenv:
+    build: .
+    command: sh test.sh
+    environment:
+      - DATABASE_URL=postgres://admin:admin@db:5432
+      - NODE_ENV=test
+    depends_on:
+      db:
+        condition: service_healthy
+    links:
+     - db
