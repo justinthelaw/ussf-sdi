@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS list (
-  item_id serial,
-  item varchar(255),
-  amount int,
-  units varchar(255)
+  item_id SERIAL,
+  item VARCHAR(255),
+  amount INT,
+  units VARCHAR(255)
 );
