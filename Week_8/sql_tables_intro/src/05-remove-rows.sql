@@ -1,0 +1,1 @@
+DELETE FROM list WHERE item = 'butter' OR item = 'sour cream';
