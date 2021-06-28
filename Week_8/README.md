@@ -1,1 +1,0 @@
-![schema_CFU2](./schema_CFU2.drawio.png)
