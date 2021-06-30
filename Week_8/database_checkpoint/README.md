@@ -21,28 +21,41 @@ Done using Knex
 ### Challenges:
 Done using Docker and PostgreSQL
   1. All of the vacation destinations.
-      - [ ] ![Challenge 1](./pictures/temp.png)
+      - [ ]
+      ![Challenge 1](./pictures/temp.png)
   2. All destinations where you can swim at the beach.
-      - [ ] ![Challenge 2](./pictures/temp.png)
+      - [ ]
+      ![Challenge 2](./pictures/temp.png)
   3. All destinations where the average temperature is over 60 degrees.
-      - [ ] ![Challenge 3](./pictures/temp.png)
+      - [ ]
+      ![Challenge 3](./pictures/temp.png)
   4. All destinations where you can swim at the beach AND go to the mountains.
-      - [ ] ![Challenge 4](./pictures/temp.png)
+      - [ ]
+      ![Challenge 4](./pictures/temp.png)
   5. All destinations where flights cost less than $500 and you can hike in the mountains.
-      - [ ] ![Challenge 5](./pictures/temp.png)
+      - [ ]
+      ![Challenge 5](./pictures/temp.png)
   6. Add an entry for The Bahamas, where the average temperature is 78, it has beaches but no mountains, and the flights cost $345.
-      - [ ] ![Challenge 6](./pictures/temp.png)
+      - [ ]
+      ![Challenge 6](./pictures/temp.png)
   7. Turns out, the cost of flights to New Zealand has increased- [ ] ! Update New Zealand's entry for flight cost to $1000.
-      - [ ] ![Challenge 7](./pictures/temp.png)
+      - [ ]
+      ![Challenge 7](./pictures/temp.png)
   8. Turns out, Minnesota isn't a vacation destination. Please delete it from the database.
-      - [ ] ![Challenge 8](./pictures/temp.png)
+      - [ ]
+      ![Challenge 8](./pictures/temp.png)
   9. When the data set was written, the author mistakently wrote "England" when they actually meant "Scotland". Please update that entry in the database.
-      - [ ] ![Challenge 9](/pictures/temp.png|alt=Challenge Not Complete)
+      - [ ]
+      ![Challenge 9](/pictures/temp.png|alt=Challenge Not Complete)
   10. Create a join table that joins the airlines and the destinations tables by correlating which airlines fly to which destinations.
-      - [ ] ![Challenge 10](./pictures/temp.png)
+      - [ ]
+      ![Challenge 10](./pictures/temp.png)
   11. All airlines that fly to New Zealand.
-      - [ ] ![Challenge 11](./pictures/temp.png)
+      - [ ]
+      ![Challenge 11](./pictures/temp.png)
   12. All airlines that do NOT fly to Scotland.
-      - [ ] ![Challenge 12](./pictures/temp.png)
+      - [ ]
+      ![Challenge 12](./pictures/temp.png)
   13. All of the data for all vacation destinations.
-      - [ ] ![Challenge 13](./pictures/temp.png)
+      - [ ]
+      ![Challenge 13](./pictures/temp.png)
