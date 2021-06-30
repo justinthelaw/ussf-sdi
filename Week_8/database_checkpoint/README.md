@@ -1,6 +1,6 @@
 # Mock_Travel_Database
 
-### Description:
+## Description:
 This is a sub-folder to house the database checkpoint for USSF SDI Cohort #2. This checkpoint involves generating a mock database with destination and airline information and performing SQL queries. SQL queries are posted as images in this README in the [Challenges](#challenges) section.
 
 The following tools and packages were used:
@@ -9,8 +9,8 @@ The following tools and packages were used:
   3. Knex
   4. pg
 
-### Initial Data:
-#### Destinations
+## Initial Data:
+#### Destinations:
 ```js
 [
     {
@@ -50,7 +50,7 @@ The following tools and packages were used:
     }
 ]
 ```
-#### Airlines
+#### Airlines:
 ```js
 [
   {
@@ -71,7 +71,7 @@ The following tools and packages were used:
   }
 ]
 ```
-### To Begin:
+## To Begin:
 Done using Knex
   1. Create a database called mock_travel_database
       - [x] See knex.js file
@@ -80,7 +80,7 @@ Done using Knex
   3. Create a table called airlines and populate it with each airline's name and id.
       - [ ] See knex migration and seed files
 
-### Challenges:
+## Challenges:
 Done using Docker and PostgreSQL
   1. All of the vacation destinations.
 ![Challenge 1](./pictures/temp.png)
