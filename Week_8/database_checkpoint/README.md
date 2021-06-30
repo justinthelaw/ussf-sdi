@@ -99,7 +99,7 @@ Done using Docker and PostgreSQL
   8. Turns out, Minnesota isn't a vacation destination. Please delete it from the database.
 ![Challenge 8](./pictures/8.png)
   9. When the data set was written, the author mistakently wrote "England" when they actually meant "Scotland". Please update that entry in the database.
-![Challenge 9](/pictures/9.png)
+![Challenge 9](./pictures/9.png)
   10. Create a join table that joins the airlines and the destinations tables by correlating which airlines fly to which destinations.
 ![Challenge 10](./pictures/10.1.png)
 ![Challenge 10](./pictures/10.2.png)
