@@ -9,6 +9,68 @@ The following tools and packages were used:
   3. Knex
   4. pg
 
+### Initial Data:
+#### Destinations
+```js
+[
+    {
+        name: "Thailand",
+        average_temp: 82,
+        cost_of_flight: 765,
+        has_beach: true,
+        has_mountains: true
+    },
+    {
+        name: "Minnesota",
+        average_temp: 41,
+        cost_of_flight: 235,
+        has_beach: false,
+        has_mountains: false
+    },
+    {
+        name: "New Zealand",
+        average_temp: 66,
+        cost_of_flight: 433,
+        has_beach: true,
+        has_mountains: true
+    },
+    {
+        name: "England",
+        average_temp: 45,
+        cost_of_flight: 290,
+        has_beach: false,
+        has_mountains: false
+    },
+    {
+        name: "Tristan da Cunha",
+        average_temp: 59,
+        cost_of_flight: 1304,
+        has_beach: true,
+        has_mountains: true,
+    }
+]
+```
+#### Airlines
+```js
+[
+  {
+    name: "Spirit",
+    destinations_flown_to: ["New Zealand", "Scotland"]
+  },
+  {
+    name: "Lufthansa",
+    destinations_flown_to: ["Tristan da Cunha", "Scotland", "Thailand"]
+  },
+  {
+    name: "Delta",
+    destinations_flown_to: ["Thailand", "Minnesota", "England", "Scotland"]
+  },
+  {
+    name: "Southwest"
+    destinations_flown_to: ["New Zealeand", "Tristan de Cunha", "Minnesota"]
+  }
+]
+```
 ### To Begin:
 Done using Knex
   1. Create a database called mock_travel_database
@@ -37,7 +99,7 @@ Done using Docker and PostgreSQL
   8. Turns out, Minnesota isn't a vacation destination. Please delete it from the database.
 ![Challenge 8](./pictures/temp.png)
   9. When the data set was written, the author mistakently wrote "England" when they actually meant "Scotland". Please update that entry in the database.
-![Challenge 9](/pictures/temp.png|alt=Challenge Not Complete)
+![Challenge 9](/pictures/temp.png)
   10. Create a join table that joins the airlines and the destinations tables by correlating which airlines fly to which destinations.
 ![Challenge 10](./pictures/temp.png)
   11. All airlines that fly to New Zealand.
