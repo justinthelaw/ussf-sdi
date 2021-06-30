@@ -107,5 +107,5 @@ Done using Docker and PostgreSQL
 ![Challenge 11](./pictures/11.png)
   12. All airlines that do NOT fly to Scotland.
 ![Challenge 12](./pictures/12.png)
-  13. All of the data for all vacation destinations.
+  13. All of the data for all vacation destinations. (*I did this one wrong - I should not have generated a "None Available" flight; instead I should have used LEFT JOINs at all the INNER JOINs to produce* ```null``` *in "The Bahamas" flights*)
 ![Challenge 13](./pictures/13.png)
