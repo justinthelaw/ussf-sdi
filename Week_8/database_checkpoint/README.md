@@ -21,28 +21,28 @@ Done using Knex
 ### Challenges:
 Done using Docker and PostgreSQL
   1. All of the vacation destinations.
-      - [ ] ![Challenge 1]('./assets/)
+      - [ ] ![Challenge 1]('./pictures)
   2. All destinations where you can swim at the beach.
-      - [ ] ![Challenge 2]('./assets/)
+      - [ ] ![Challenge 2]('./pictures)
   3. All destinations where the average temperature is over 60 degrees.
-      - [ ] ![Challenge 3]('./assets/)
+      - [ ] ![Challenge 3]('./pictures)
   4. All destinations where you can swim at the beach AND go to the mountains.
-      - [ ] ![Challenge 4]('./assets/)
+      - [ ] ![Challenge 4]('./pictures)
   5. All destinations where flights cost less than $500 and you can hike in the mountains.
-      - [ ] ![Challenge 5]('./assets/)
+      - [ ] ![Challenge 5]('./pictures)
   6. Add an entry for The Bahamas, where the average temperature is 78, it has beaches but no mountains, and the flights cost $345.
-      - [ ] ![Challenge 6]('./assets/)
+      - [ ] ![Challenge 6]('./pictures)
   7. Turns out, the cost of flights to New Zealand has increased- [ ] ! Update New Zealand's entry for flight cost to $1000.
-      - [ ] ![Challenge 7]('./assets/)
+      - [ ] ![Challenge 7]('./pictures)
   8. Turns out, Minnesota isn't a vacation destination. Please delete it from the database.
-      - [ ] ![Challenge 8]('./assets/)
+      - [ ] ![Challenge 8]('./pictures)
   9. When the data set was written, the author mistakently wrote "England" when they actually meant "Scotland". Please update that entry in the database.
-      - [ ] ![Challenge 9]('./assets/)
+      - [ ] ![Challenge 9]('./pictures)
   10. Create a join table that joins the airlines and the destinations tables by correlating which airlines fly to which destinations.
-      - [ ] ![Challenge 10]('./assets/)
+      - [ ] ![Challenge 10]('./pictures)
   11. All airlines that fly to New Zealand.
-      - [ ] ![Challenge 11]('./assets/)
+      - [ ] ![Challenge 11]('./pictures)
   12. All airlines that do NOT fly to Scotland.
-      - [ ] ![Challenge 12]('./assets/)
+      - [ ] ![Challenge 12]('./pictures)
   13. All of the data for all vacation destinations.
-      - [ ] ![Challenge 13]('./assets/)
+      - [ ] ![Challenge 13]('./pictures)
