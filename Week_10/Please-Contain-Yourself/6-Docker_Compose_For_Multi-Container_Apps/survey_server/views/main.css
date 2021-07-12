@@ -18,7 +18,7 @@ body {
 	}
 
 h2 {
-		margin:10px 0;	
+		margin:10px 0;
 		padding-bottom:10px;
 		width:180px;
 		color:#78788c;
@@ -62,7 +62,7 @@ p:before {
 		transition:all .3s
 	}
 
-button:hover {	
+button:hover {
 		background:#78788c;
 		color:#fff
 	}
@@ -80,7 +80,8 @@ div {
 		box-shadow:10px 10px 40px -14px #000
 	}
 
-span { 
+span {
 		margin:0 5px 0 15px
 	}
+
 

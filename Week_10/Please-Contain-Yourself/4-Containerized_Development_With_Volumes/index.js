@@ -8,10 +8,10 @@ app.use(express.static(__dirname + '/views'));
 
 app.get('/', (req, res) => {
 
-// Change the 'color' variable to a different color!
-  var color = 'SteelBlue';
+  // Change the 'color' variable to a different color!
+  var color = 'Red';
 
-  res.render('index', {color: color});
+  res.render('index', { color: color });
 });
 
 console.log('listening on port 8080...\n');
