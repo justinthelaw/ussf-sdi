@@ -1,0 +1,58 @@
+# docker config version
+version: "3.1"
+# begin listing containers
+services:
+  # container
+  frontend:
+    # image to be used for spin-up
+    image: frontend
+    # container name to be used for reference
+    container_name: frontend
+    # docker's volumes area, takes code from ./client and puts it in /app in the docker container
+    volumes:
+      - "./client:/app"
+    # port connection, local port : container port
+    ports:
+      - "3000:3000"
+    # internal network for communication between containers
+    networks:
+      - app-network
+    # will not spin-up this container until the dependencies have spun-up
+    depends_on:
+      - server
+
+  server:
+    image: server
+    container_name: server
+    volumes:
+      - "./server:/app"
+    ports:
+      - "3001:3001"
+    networks:
+      - app-network
+    environment:
+      # specific to postgresql for connecting to the database
+      DB_CONNECTION_STRING: postgres://postgres:password@db:5432/db
+    depends_on:
+      - db
+
+  db:
+    image: db
+    container_name: db
+    ports:
+      - "5432:5432"
+    environment:
+      # specific to postgresql for spinning-up the database
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+    # data storage, host path : container path
+    volumes:
+      - ./my_data_directory:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+# set-up network for container communication
+networks:
+  app-network:
+    driver: bridge
