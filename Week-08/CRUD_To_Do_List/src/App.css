@@ -1,0 +1,61 @@
+ul {
+  text-align: center;
+  list-style-position:inside;
+}
+
+ul li {
+  position: relative;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background: #eee;
+  transition: 0.2s;
+  user-select: none;
+  list-style-type: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+button {
+  margin-left: 10px;
+  cursor: pointer;
+  background: #d9d9d9;
+  color: rgb(0, 0, 0);
+  float: center;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 0;
+  }
+
+input {
+  margin-left: 10px;
+}
+
+.center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.body{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.todos {
+  margin-left:50px;
+}

@@ -1,1 +1,0 @@
-Go to https://github.com/justinthelaw/Weather_Grabber_App

@@ -1,0 +1,10 @@
+.profilePic {
+    justify-content: right;
+    border-radius: 5px;
+    border-color: gold;
+    /* box-shadow: 10px 10px; */
+}
+
+.large-profile-image {
+    width: 33%;
+}
