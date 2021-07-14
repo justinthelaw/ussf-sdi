@@ -5,7 +5,8 @@ services:
   # container
   frontend:
     # image to be used for spin-up
-    image: frontend
+    #IMPORTANT: use build if there isn't an image on dockerhub already
+    image: frontend # build: frontend
     # container name to be used for reference
     container_name: frontend
     # docker's volumes area, takes code from ./client and puts it in /app in the docker container
