@@ -20,7 +20,10 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: docker
-      POSTGRES_DB: db
+      POSTGRES_DB: docker
+    volumes:
+      # local folder where database files are : container folder
+      - ./db:/var/lib/postgresql/data/docker-project
     networks:
       - wish-network
     healthcheck:
