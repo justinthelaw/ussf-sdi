@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx knex migrate:rollback && npx knex migrate:latest && npx knex seed:run && node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "knex": "^0.95.7",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.12",
+    "pg": "^8.6.0"
+  }
+}
