@@ -1,0 +1,15 @@
+{
+  "name": "nodejsapifile",
+  "version": "1.0.0",
+  "main": "expressServer.js",
+  "repository": "https://github.com/mpineault/nodejsapifile",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "start": "node expressServer.js"
+  }
+}
