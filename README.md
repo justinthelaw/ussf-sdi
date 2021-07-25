@@ -19,7 +19,7 @@ Coding challenges, notes, mock-ups, and minor projects done throughout United St
   - SQL Databases
   - Major Project #2
   - Docker Containerization
-  - Heroku deployment
+  - Cloud deployment
   - PlatformONE deployment
 
 ## Instructions
