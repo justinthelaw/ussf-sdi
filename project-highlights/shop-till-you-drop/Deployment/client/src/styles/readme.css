@@ -1,0 +1,51 @@
+.README {
+  text-align: justify;
+  font-size: medium;
+}
+
+.README h1 {
+  text-shadow: 2px 2px 2px rgb(156, 156, 156);
+}
+
+.README code {
+  background-color: rgba(190, 190, 190, 0.774);
+  border-radius: 3px;
+  padding: 2px;
+  font-size: large;
+}
+
+.README table {
+  border: solid 2px rgb(109, 109, 109);
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+
+.README th,
+td {
+  border: solid 2px rgb(97, 97, 97);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.README th {
+  background-color: rgba(204, 204, 204);
+}
+
+.README tr:nth-child(even) {
+  background-color: rgba(240, 240, 240);
+}
+
+.README td:first-child {
+  font-style: italic;
+}
+
+.README a {
+  text-decoration: none;
+  color: rgb(77, 88, 252);
+  text-shadow: 1px 1px 2px #8991ff77;
+  font-weight: bold;
+}
+
+.README a:hover {
+  text-decoration: underline;
+}

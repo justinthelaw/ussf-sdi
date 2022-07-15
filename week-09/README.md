@@ -1,2 +1,3 @@
 # Project Week #2
-See [Launcher-Scheduler-9000](https://github.com/justinthelaw/Launch-Scheduler-9000)
+
+See [Launch-Scheduler-9000](../project-highlights/launch-scheduler-9000/)
