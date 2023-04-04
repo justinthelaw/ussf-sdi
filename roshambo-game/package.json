@@ -1,0 +1,26 @@
+{
+  "name": "roshambo",
+  "version": "1.0.0",
+  "description": "Rock, Paper, Scissors Command Line Application",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinthelaw/Roshambo.git"
+  },
+  "author": "Justin Law & Noah Loy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinthelaw/Roshambo/issues"
+  },
+  "homepage": "https://github.com/justinthelaw/Roshambo#readme",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "yargs": "^17.0.1"
+  },
+  "bin": {
+    "roshambo": "./bin/index.js"
+  }
+}

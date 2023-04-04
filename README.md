@@ -1,5 +1,5 @@
 # USSF SDI Class Content
-Coding challenges, notes, mock-ups, and minor projects done throughout United States Space Force (USSF) Software Development Immersive (SDI) Cohort #2. Major projects and Justin's favorites are located in [separate Github repositories](https://github.com/justinthelaw?tab=repositories). Most of the classwork listed below is not stored on Github.
+Coding challenges, notes, mock-ups, and minor projects done throughout United States Space Force (USSF) Software Development Immersive (SDI) Cohort #2. The final capstone project, R2/D2, is located in [separate Github repositories](https://github.com/justinthelaw?tab=repositories). Most of the day-to-day classwork and toy problems are not stored on here on Github, and only the quaterly projects are shown here.
 
 ## Major USSF SDI Learn Modules
   - Git and the Command Line
